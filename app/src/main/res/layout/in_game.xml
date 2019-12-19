@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/vieti"
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Numar de vieti ramase:"/>
+    <TextView
+        android:id="@+id/intrebare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="Aici vine intrebarea"
+        android:textSize="30dp" />
+
+
+
+    <RadioGroup
+        android:id="@+id/raspunsuri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+
+        <RadioButton
+            android:id="@+id/raspuns1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Optiune 1" />
+
+        <RadioButton
+            android:id="@+id/raspuns2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Optiune 2" />
+
+        <RadioButton
+            android:id="@+id/raspuns3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Optiune 3" />
+
+        <RadioButton
+            android:id="@+id/raspuns4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Optiune 4" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnTrimite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Trimite"/>
+
+</LinearLayout>
+    </ScrollView>

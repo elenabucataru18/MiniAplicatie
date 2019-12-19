@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#464242">
+
+    <TextView
+        android:id="@+id/textSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:text="Select an avatar"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/firstLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/textSelect">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="selectAvatar"
+            android:src="@drawable/aquaman"
+
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="selectAvatar"
+
+            android:src="@drawable/spiderman" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar3"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="selectAvatar"
+
+            android:src="@drawable/batman" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/firstLinear">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar4"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="selectAvatar"
+
+            android:src="@drawable/wonderwomen" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar5"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+
+            android:onClick="selectAvatar"
+            android:src="@drawable/victorstone" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar6"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+
+            android:onClick="selectAvatar"
+            android:src="@drawable/photo_icon" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/nume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+
+        android:textColor="#ffffff"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondLinear" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nume" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="SIGN UP"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.372" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

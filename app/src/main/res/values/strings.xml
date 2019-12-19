@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MiniAplicatie</string>
+    <string name="title_name">Trivia!</string>
+    <string name="btnPlay">PLAY</string>
+</resources>
