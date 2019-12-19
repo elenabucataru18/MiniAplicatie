@@ -133,10 +133,11 @@ public class Register extends AppCompatActivity {
                 Log.d("avatar", "da, am acces");
             }
             dispatchPictureTakerAction();
-        }else{
-            v.setAlpha(0.5f);
         }
+
+
         selectAvatars();
+        v.setAlpha(0.5f);
 
     }
     @Override
